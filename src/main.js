@@ -10,17 +10,14 @@ import App from './App.vue'
 import router from '@/router'
 import Vant from 'vant';
 import 'vant/lib/index.css';
+import components from '@/components/index'
+import wwAuth from '@/plugins/ww-auth'
 
+
+Vue.use(wwAuth);
 Vue.use(Vant);
+Vue.use(components);
 Vue.config.productionTip = false
-
-// 单个组件测试排查
-import './components/aform/avantComponents/index'
-// 自动注册
-// import './components/aform/autoAvantComponent'
-
-import AvueUeditor from 'avue-plugin-ueditor'
-Vue.use(AvueUeditor);
 
 new Vue({
   router,

@@ -20,6 +20,7 @@ import Rate from './rate.vue'
 import Slider from './slider.vue'
 import Dynamic from './dynamic.vue'
 import Ueditor from './ueditor.vue'
+import AvueUeditor from 'avue-plugin-ueditor'
 
 Vue.component("avant-input",Input)
 Vue.component("avant-number",Number)
@@ -35,3 +36,4 @@ Vue.component("avant-rate",Rate)
 Vue.component("avant-slider",Slider)
 Vue.component("avant-dynamic",Dynamic)
 Vue.component("avant-ueditor",Ueditor)
+Vue.use(AvueUeditor)

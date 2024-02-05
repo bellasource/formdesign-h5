@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import './avantComponents/index'
 import cloneDeep from "lodash/cloneDeep";
 import { Notify } from "vant";
 import getTypeExchange from "./utils/typeExchange";
